@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'mongoid', github:'mongoid/mongoid'
@@ -11,8 +9,10 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- gem 'therubyracer',  platforms: :ruby
-
+gem 'therubyracer',  platforms: :ruby
+gem 'devise'
+gem 'omniauth-google-oauth2'
+gem 'omniauth'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -44,5 +44,6 @@ group :development, :test do  #overrite existing..generate spec directory,,inclu
 		gem 'database_cleaner'
 		gem 'simplecov'
 end
+gem 'mongoid-rspec'
 
 gem 'execjs'
